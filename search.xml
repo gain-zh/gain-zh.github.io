@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  <entry>
+    <title>Hello World</title>
+    <url>/2026/04/21/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>Test</title>
+    <url>/2026/04/21/Test/</url>
+    <content><![CDATA[<h2 id="起因"><a href="#起因" class="headerlink" title="起因"></a>起因</h2><p>​		在引入一些依赖后，代码并没报错，运行后报错找不到xxx.class,大概是idea缓存&#x2F;索引和maven依赖不同步，遂在网上搜到了暴力解法<br>即在设置中勾选<strong>Delegate IDE build&#x2F;run actions to Maven</strong>选项，将IDE的构建和运行委托给maven执行，在之后引发了一系列问题。</p>
+<ul>
+<li>ide原生编译和maven编译区别</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>IDEA原生编译</th>
+<th>maven编译</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>编译范围</td>
+<td>只编译你改动的文件</td>
+<td>执行完整的Maven生命周期</td>
+</tr>
+<tr>
+<td>是否运行测试</td>
+<td>不运行</td>
+<td>会运行<code>test</code>阶段的所有测试</td>
+</tr>
+<tr>
+<td>速度</td>
+<td>快（增量编译）</td>
+<td>慢（全量构建）</td>
+</tr>
+<tr>
+<td>适用场景</td>
+<td>日常开发</td>
+<td>特殊构建需求</td>
+</tr>
+</tbody></table>
+<p>idea的构建被托管后，每次启动项目或运行测试类的方法，甚至只是个简单的helloworld程序，都会让<strong>整个项目重新构建一遍</strong>，底下会出现<strong>build窗口</strong>，会进行<strong>漫长的build过程</strong>，且build过程中会将<strong>所有测试类中的所有测试方法全部运行一遍</strong>，运行结果打印在build窗口中，然后才开始项目运行，也就是说如果只是想运行某一个测试方法，不仅项目中所有的测试方法都会运行一遍，在run过程中该测试方法还会再运行一遍</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Test</span></span><br><span class="line"><span class="keyword">void</span> <span class="title function_">insertTest44</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="comment">// 构建数据库实体类</span></span><br><span class="line">    <span class="type">UserDO4</span> <span class="variable">userDO</span> <span class="operator">=</span> UserDO4.builder()</span><br><span class="line">            .id(<span class="number">55</span>)</span><br><span class="line">            .username(<span class="string">&quot;高松灯&quot;</span>)</span><br><span class="line">            .password(<span class="string">&quot;123456&quot;</span>)</span><br><span class="line">            .build();</span><br><span class="line">    userMapper.insert(userDO);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>类似此插入方法会在数据库<strong>执行两次</strong>，导致主键冲突报错，且极难找到原因</p>
+]]></content>
+  </entry>
+</search>
