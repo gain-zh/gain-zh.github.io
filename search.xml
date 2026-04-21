@@ -42,8 +42,11 @@
 <p>类似此插入方法会在数据库<strong>执行两次</strong>，导致主键冲突报错，且极难找到原因</p>
 ]]></content>
       <categories>
-        <category>-测试</category>
+        <category>-测试分类</category>
       </categories>
+      <tags>
+        <tag>-测试标签</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
