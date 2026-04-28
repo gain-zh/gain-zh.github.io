@@ -66,4 +66,63 @@
 <p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 ]]></content>
   </entry>
+  <entry>
+    <title>Typora快捷键</title>
+    <url>/2026/04/28/Typora%E5%BF%AB%E6%8D%B7%E9%94%AE/</url>
+    <content><![CDATA[<h1 id="MarkDown-Typora-快捷键"><a href="#MarkDown-Typora-快捷键" class="headerlink" title="MarkDown &amp; Typora 快捷键"></a>MarkDown &amp; Typora 快捷键</h1><h2 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h2><blockquote>
+<p>crtl + 1<del>6 | n个#加空格     1</del>6级标题  </p>
+</blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h3 id="三级标题"><a href="#三级标题" class="headerlink" title="三级标题"></a>三级标题</h3><h4 id="四级标题"><a href="#四级标题" class="headerlink" title="四级标题"></a>四级标题</h4><h5 id="五级标题"><a href="#五级标题" class="headerlink" title="五级标题"></a>五级标题</h5><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6><p>正文大小</p>
+<h2 id="2-字体"><a href="#2-字体" class="headerlink" title="2.字体"></a>2.字体</h2><blockquote>
+<p>crtl + B 加粗</p>
+<p>crtl + I  斜体</p>
+</blockquote>
+<p><strong>文字加粗</strong></p>
+<p><em>文字斜体</em></p>
+<h2 id="3-引用"><a href="#3-引用" class="headerlink" title="3.引用"></a>3.引用</h2><blockquote>
+<p>大于号 + 空格</p>
+</blockquote>
+<blockquote>
+<p>引用文字</p>
+</blockquote>
+<h2 id="4-分割线"><a href="#4-分割线" class="headerlink" title="4.分割线"></a>4.分割线</h2><blockquote>
+<p>三个减号或三个星号</p>
+</blockquote>
+<hr>
+<hr>
+<h2 id="5-图片"><a href="#5-图片" class="headerlink" title="5.图片"></a>5.图片</h2><blockquote>
+<p><img src="E:/$E/路径" alt="图片名">  或直接插入</p>
+</blockquote>
+<h2 id="6-超链接"><a href="#6-超链接" class="headerlink" title="6.超链接"></a>6.超链接</h2><blockquote>
+<p><a href=""></a>   文字  网站</p>
+</blockquote>
+<p><a href="www.baidu.com">百度</a></p>
+<h2 id="7-列表"><a href="#7-列表" class="headerlink" title="7.列表"></a>7.列表</h2><h3 id="7-1-有序列表"><a href="#7-1-有序列表" class="headerlink" title="7.1 有序列表"></a>7.1 有序列表</h3><blockquote>
+<p>数字.空格 + 回车</p>
+</blockquote>
+<ol>
+<li>111</li>
+<li>222</li>
+</ol>
+<h3 id="7-2无序列表"><a href="#7-2无序列表" class="headerlink" title="7.2无序列表"></a>7.2无序列表</h3><blockquote>
+<p>减号 + 空格</p>
+</blockquote>
+<ul>
+<li>111</li>
+<li>222</li>
+</ul>
+<h2 id="8-表格"><a href="#8-表格" class="headerlink" title="8.表格"></a>8.表格</h2><blockquote>
+<p>直接插入吧</p>
+</blockquote>
+<h2 id="9-代码"><a href="#9-代码" class="headerlink" title="9.代码"></a>9.代码</h2><blockquote>
+<p>三个&#96; + 语言</p>
+</blockquote>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">System.out.println(<span class="string">&quot;Hello World&quot;</span>)</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="10-附博客上传命令"><a href="#10-附博客上传命令" class="headerlink" title="10.附博客上传命令"></a>10.附博客上传命令</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure>
+
+]]></content>
+  </entry>
 </search>
